@@ -1,0 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
+import { SignInButton } from '../SignInButton'
+import styles from './style.module.scss'
+
+export function Header() {
+  return (
+    <header className={styles.headerContainter}>
+      <div className={styles.headerContent}>
+        <img src="/images/logo.svg" alt="ig.news" />
+        <nav>
+          <a className={styles.active}>Home</a>
+          <a>Posts</a>
+        </nav>
+
+        <SignInButton />
+      </div>
+    </header>
+  )
+}
